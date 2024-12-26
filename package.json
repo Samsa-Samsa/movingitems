@@ -1,6 +1,6 @@
 {
   "name": "com.appidea.moving_items",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "displayName": "moving_items",
   "description": "match items",
   "dependencies": {

@@ -110,6 +110,7 @@ public class GameManagerScript : MonoBehaviour
             // changing target item is executing here
             var obj = Instantiate(SlotSamples[0]);
             obj.transform.position = SlotSamplePos.position;
+            obj.transform.GetComponent<SpriteRenderer>().sortingOrder = 5;
 
             // obj.transform.localScale = new Vector2(obj.transform.localScale.x * responsivePosition.GetScreenRatio(),
             //     obj.transform.localScale.y * responsivePosition.GetScreenRatio());
@@ -135,6 +136,15 @@ public class GameManagerScript : MonoBehaviour
         HappyFinished = false;
         skeletonAnimation.loop = false;
         skeletonAnimation.AnimationName = "Happy";
+        StartCoroutine(AnimationDelay());
+
+    }
+
+    private IEnumerator AnimationDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        skeletonAnimation.loop = true;
+        skeletonAnimation.AnimationName = "Idle";
     }
 
 

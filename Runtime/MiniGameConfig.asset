@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MiniGameConfig
   m_EditorClassIdentifier: 
   MiniGameName: Moving_Items
-  Version: 0.1.5
+  Version: 0.1.6
   Url: https://pub-9874309ccdb74d6b9fb6c2f99a34dedc.r2.dev
   CustomRenderPipelineAsset: {fileID: 11400000, guid: 628c03f1665c62046a46c81b324c0ac2, type: 2}
